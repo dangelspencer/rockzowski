@@ -48,7 +48,7 @@ export const pulseRgb = (
     setTimeout(() => {
       clearInterval(interval);
 
-      // TODO: instead of digitalWrite(), take the current pwm level and work it back to 0 using STEP_VALUE
+      // TODO: instead of digitalWrite(0), take the current pwm level and work it back to 0 using STEP_VALUE
       RED_LED.digitalWrite(0);
       GREEN_LED.digitalWrite(0);
       BLUE_LED.digitalWrite(0);
